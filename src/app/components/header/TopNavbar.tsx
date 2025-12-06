@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import mmtLogo from "../../../../public/mmt-logo.avif";
+import mmtLogo from "../../../../public/icons/mmt-logo.avif";
 import TopCard from "../ui/TopCard";
 
-export default function topNavbar() {
+export default function TopNavbar() {
   return (
-    <div className="w-full bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <div className="w-full py-2">
       <div className="mx-auto max-w-7xl px-4 py-2 flex items-center justify-between">
         {/* LEFT LOGO */}
         <div className="flex items-center">
