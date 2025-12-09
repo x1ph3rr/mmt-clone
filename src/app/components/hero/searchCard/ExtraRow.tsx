@@ -6,15 +6,15 @@ export default function ExtraRow() {
       {/* Simple checkbox row */}
       <div
         className="
-        w-full h-20 rounded-xl overflow-hidden 
+        w-full h-8 rounded-xl overflow-hidden 
         bg-gradient-to-r from-white via-blue-50 to-blue-100
         relative
       "
       >
         {/* DIAGONAL STRIPES */}
-        <div className="absolute right-24 top-0 w-40 h-full bg-[linear-gradient(115deg,rgba(255,255,255,0)_40%,rgba(219,234,254,1)_40%)] opacity-60"></div>
-        <div className="absolute right-12 top-0 w-40 h-full bg-[linear-gradient(115deg,rgba(255,255,255,0)_40%,rgba(191,219,254,1)_40%)] opacity-60"></div>
-        <div className="absolute right-0 top-0 w-40 h-full bg-[linear-gradient(115deg,rgba(255,255,255,0)_40%,rgba(147,197,253,1)_40%)] opacity-60"></div>
+        <div className="absolute right-24 top-0 w-8 h-full bg-[linear-gradient(115deg,rgba(255,255,255,0)_40%,rgba(219,234,254,1)_40%)] opacity-60"></div>
+        <div className="absolute right-12 top-0 w-8 h-full bg-[linear-gradient(115deg,rgba(255,255,255,0)_40%,rgba(191,219,254,1)_40%)] opacity-60"></div>
+        <div className="absolute right-0 top-0 w-8 h-full bg-[linear-gradient(115deg,rgba(255,255,255,0)_40%,rgba(147,197,253,1)_40%)] opacity-60"></div>
         <div className="flex items-center gap-3 w-full">
           <input
             type="checkbox"

@@ -6,7 +6,7 @@ import ExtraRow from "./searchCard/ExtraRow";
 
 export default function SearchCard() {
   return (
-    <div className="w-full p-8 pt-4">
+    <div className="w-full bg-black p-8 pt-4">
       <TripTabs />
       <InputGroup />
       <SpecialFares />
