@@ -5,7 +5,10 @@ export default function HeadWrapper() {
   return (
     <div>
       <TopNavbar />
-      <CategoryBar />
+
+      <div className="w-full z-20 relative">
+        <CategoryBar />
+      </div>
     </div>
   );
 }
