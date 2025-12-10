@@ -38,22 +38,35 @@ export default function OffersSection() {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="flex items-center gap-4">
-          <button className="text-blue-600 font-semibold text-sm hover:underline">
-            VIEW ALL
+        <div className="flex items-center gap-6">
+          {/* VIEW ALL BUTTON */}
+          <button className="flex items-center gap-2 text-blue-600 font-bold text-xs hover:text-blue-700 transition uppercase tracking-wide">
+            View All
+            <span className="text-lg leading-none pb-0.5">→</span>
           </button>
-          <button
-            onClick={() => scroll("left")}
-            className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full shadow-sm hover:bg-gray-50 transition"
-          >
-            ←
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full shadow-sm hover:bg-gray-50 transition"
-          >
-            →
-          </button>
+
+          {/* NAVIGATION PILL (Unified Container) */}
+          <div className="flex bg-white rounded-full shadow-md border border-gray-100 overflow-hidden">
+            {/* LEFT ARROW */}
+            <button
+              onClick={() => scroll("left")}
+              className="w-10 h-9 flex items-center justify-center hover:bg-gray-50 transition border-r border-gray-200"
+            >
+              <span className="text-blue-400 font-bold text-lg leading-none pb-1">
+                ‹
+              </span>
+            </button>
+
+            {/* RIGHT ARROW */}
+            <button
+              onClick={() => scroll("right")}
+              className="w-10 h-9 flex items-center justify-center hover:bg-gray-50 transition"
+            >
+              <span className="text-blue-600 font-bold text-lg leading-none pb-1">
+                ›
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 
